@@ -39,9 +39,9 @@ async function setBackground(person) {
 //check for mutual contacts and give correct output
 function hasMutuals(person) {
   if (person.mutualConnections > 0) {
-    return `<img src="../assets/img/link.svg" class="mutuals_icon"/> ${person.mutualConnections} Mutual Connections`;
+    return `<img src="assets/img/link.svg" class="mutuals_icon"/> ${person.mutualConnections} Mutual Connections`;
   } else {
-    return `<img src="../assets/img/gfk.png" class="gfk_logo"/> GfK`;
+    return `<img src="assets/img/gfk.png" class="gfk_logo"/> GfK`;
   }
 }
 
@@ -63,7 +63,7 @@ function renderPeople() {
     cardHtml += `<div class="card">
             <div class="card_bg" style="--bg-img: url(${person.backgroundImage})">
               <button class="delete_button" onclick="deleteCard(${index})">
-                <img src="../assets/img/x-lg.svg" class="close-icon" alt="" />
+                <img src="assets/img/x-lg.svg" class="close-icon" alt="" />
               </button>
             </div>
             <img
